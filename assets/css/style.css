@@ -45,11 +45,13 @@ header {
     color: #f0e7c8;
 }
 
+#site-header nav ul{
+    margin: 0;
+}
 
-#site-header nav ul li {
+#site-header nav li {
     display: inline;
     border: 5px ;
-    margin: auto;
     padding: 5px;
 }
 
@@ -71,6 +73,10 @@ p {
     line-height: 1.6;
 }
 
+strong::after{
+    content: "\f121";
+     font-family:"Font Awesome 6 Free";
+}
 
 
 /* inzio lavoro main */
@@ -95,11 +101,14 @@ section h2{
     color: hsl(220, 60%, 25%);
 }
 
+h2::before{
+    content:"\f111";
+    color: hsl(45, 90%, 50%);
+    font-family:"Font Awesome 6 Free";
+    font-size: 15px;
+    margin-right: 8px;
+}
 /* stilizzo sottotitoli sezioni */
-/* section h2::before {
-    content: '- ';
-    color: goldenrod;
-} */
 
 #chi-sono{
     margin-top: -80px;
@@ -125,10 +134,10 @@ section h2{
 }
 
 /* stilizzo icone font awesome */
-h2 i{
+/* h2 i{
     color: hsl(45, 90%, 50%);
     height: 10px;
-}
+} */
 
 /* sezione competenze tabella */
 #competenze table{
@@ -189,6 +198,7 @@ h2 i{
     padding: 12px 14px;
 }
 
+
 /* sezione progetti */
 
 article{
@@ -206,6 +216,9 @@ article h3, p, a{
 article:nth-child(even){
     background-color: white;
     border-left:5px solid hsl(45, 90%, 50%);
+}
+.fa-brands .fa-github{
+    border-left: 8px;
 }
 
 .codes{
@@ -296,5 +309,5 @@ button:hover{
     color: #FFFFFF;
     text-align: center;
     font-size: 0.9rem;
-    padding: 30
+    padding: 30px 20px;
 }
