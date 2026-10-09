@@ -16,7 +16,7 @@ h1,
 h2,
 h3 {
     font-family: 'Playfair', Georgia, serif;
-    color:hsl(220, 60%, 25%) ;
+    color: hsl(220, 60%, 25%);
 }
 
 
@@ -45,13 +45,13 @@ header {
     color: #f0e7c8;
 }
 
-#site-header nav ul{
+#site-header nav ul {
     margin: 0;
 }
 
 #site-header nav li {
     display: inline;
-    border: 5px ;
+    border: 5px;
     padding: 5px;
 }
 
@@ -73,9 +73,9 @@ p {
     line-height: 1.6;
 }
 
-strong::after{
+#site-header strong::after {
     content: "\f121";
-     font-family:"Font Awesome 6 Free";
+    font-family: "Font Awesome 6 Free";
 }
 
 
@@ -97,30 +97,44 @@ section {
     background-color: white;
 }
 
-section h2{
+section h2 {
     color: hsl(220, 60%, 25%);
 }
 
-h2::before{
-    content:"\f111";
+h2::before {
+    content: "\f111";
     color: hsl(45, 90%, 50%);
-    font-family:"Font Awesome 6 Free";
+    font-family: "Font Awesome 6 Free";
     font-size: 15px;
     margin-right: 8px;
 }
-/* stilizzo sottotitoli sezioni */
 
-#chi-sono{
-    margin-top: -80px;
-   
+.torna-su{
+    text-decoration: none;
+    color:hsl(45, 90%, 50%);;
 }
 
-#chi-sono p:first-of-type::first-letter{
+.torna-su i{
+    padding-right: 5px;
+}
+
+.torna-su:hover{
+    color:brown ;
+}
+
+/* stilizzo sottotitoli sezioni */
+
+#chi-sono {
+    margin-top: -80px;
+
+}
+
+#chi-sono p:first-of-type::first-letter {
     font-weight: bold;
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
     margin-right: 6px;
-    color:hsl(220, 60%, 30%);
+    color: hsl(220, 60%, 30%);
 }
 
 /* cambio forma immagine */
@@ -140,58 +154,77 @@ h2::before{
 } */
 
 /* sezione competenze tabella */
-#competenze table{
+#competenze table {
     border-collapse: collapse;
     width: 100%;
     text-align: left;
 }
 
-#competenze table caption{
+#competenze table caption {
     color: hsl(220, 30%, 40%);
     display: inline-block;
+    padding: 12px 14px;
 }
 
-#competenze table th{
+#competenze table th {
     color: hsl(220, 60%, 25%);
-    background-color: #ece6d8 ;
+    background-color: #ece6d8;
+    padding: 12px 14px;
 }
 
-#competenze table td{
+/* barre progressive */
+.bar {
+    background-color: #ece6d8;
+    border-radius: 6px;
+    height: 12px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.bar-fill {
+    background-color: hsl(45, 90%, 50%);
+    height: 100%;
+    border-radius: 6px;
+}
+
+#competenze table td {
     padding: 12px 14px;
     border: 1px solid #ece6d8;
     border-left: none;
     border-right: none;
 }
 
-#competenze table i{
+#competenze table i {
     color: hsl(220, 60%, 30%);
     padding: 5px;
 }
 
-#progress-bar{
-    accent-color:gold;
-    
+#progress-bar {
+    accent-color: gold;
+
 }
 
 /* sezione esperienze */
 
-#esperienze table{
+#esperienze table {
     border-collapse: collapse;
     margin: 0 auto;
     width: 100%;
 }
 
-#esperienze table caption{
+#esperienze table caption {
     color: hsl(220, 30%, 40%);
     display: inline-block;
 }
 
-#esperienze table th{
+#esperienze table th {
     color: hsl(220, 60%, 25%);
-    background-color: #ece6d8 ;
+    background-color: #ece6d8;
+    padding: 12px 14px;
 }
 
-#esperienze table td{
+#esperienze table td {
     border: 1px solid #ece6d8;
     border-left: none;
     border-right: none;
@@ -201,66 +234,77 @@ h2::before{
 
 /* sezione progetti */
 
-article{
+article {
     border: 1px solid #e6e0d3;
     border-radius: 5px;
     margin-top: 10px;
-    background-color:#ece6d8;
+    background-color: #ece6d8;
     border-left: 5px solid hsl(220, 60%, 30%);
 }
 
-article h3, p, a{
-    padding-left: 10px;
+article h3,
+p,
+i {
+    padding-left: 15px;
 }
 
-article:nth-child(even){
+/* giustifica testo progetti */
+/* .card{
+    display: inline-block;
+    padding: 2px 9px;
+} */
+
+article:nth-child(even) {
     background-color: white;
-    border-left:5px solid hsl(45, 90%, 50%);
+    border-left: 5px solid hsl(45, 90%, 50%);
 }
-.fa-brands .fa-github{
+
+.fa-brands .fa-github {
     border-left: 8px;
 }
 
-.codes{
+.codes {
     text-decoration: none;
     color: hsl(220, 60%, 30%);
 }
 
-#dettaglio{
-    display: inline-block;
-    text-decoration: none;
+#dettaglio {
+    display: block;
+    width: fit-content;
+    margin: 18px 0 0 auto;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
     color: hsl(220, 60%, 30%);
     margin-top: 10px;
-    align-self:end;
+    align-self: end;
 }
 
-#dettaglio::before{
-    content: ;
-}
 /* stilizzazione sezione contatti */
 
 /* form */
-.input{
+.input {
     font-weight: bold;
-    color: hsl(220, 60%, 30%); 
+    color: hsl(220, 60%, 30%);
 }
 
-input:not([type="checkbox"]), textarea, select{
+input:not([type="checkbox"]),
+textarea,
+select {
     background-color: #fbf8f1;
     border: 1px solid #d6cfbf;
     width: 100%;
     padding: 10px 12px;
 }
 
-input:focus{
+input:focus {
     background-color: white;
 }
 
-textarea:focus{
+textarea:focus {
     background-color: white;
 }
 
-button{
+button {
     color: white;
     background-color: hsl(220, 60%, 30%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -270,39 +314,18 @@ button{
     height: 35px;
 }
 
-button:hover{
-    background-color:hsl(220, 60%, 45%);
+button:hover {
+    background-color: hsl(220, 60%, 45%);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
 
-#submit::before{
+#submit::before {
     content: "\f1d8";
-    font-family:"Font Awesome 6 Free";
+    font-family: "Font Awesome 6 Free";
     margin-right: 8px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* stilizzo il footer */
 
 #side-footer {
     background-color: #172136;
@@ -310,4 +333,41 @@ button:hover{
     text-align: center;
     font-size: 0.9rem;
     padding: 30px 20px;
+}
+
+.social {
+    display: inline;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.social a {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 5px;
+
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    line-height: 43px;
+    vertical-align: middle;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+
+}
+
+.social a i{
+    line-height: 1;
+  vertical-align: middle;
+  font-size: 24px;
+  padding-left: 0px;
+
+}
+ 
+#side-footer p {
+    color: #ece6d8;
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
