@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f4f1ec;
+    color: #2b2b2b;
+}
+
+/* cambio font titoli */
+h1,
+h2,
+h3 {
+    font-family: 'Playfair', Georgia, serif;
+    color:hsl(220, 60%, 25%) ;
+}
+
+
+header {
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#site-header {
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 4px solid hsl(45, 90%, 60%);
+}
+
+#site-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+
+}
+
+.sottotitolo {
+    color: #f0e7c8;
+}
+
+
+#site-header nav ul li {
+    display: inline;
+    border: 5px ;
+    margin: auto;
+    padding: 5px;
+}
+
+#site-header a {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-decoration: none;
+
+}
+
+#site-header a:hover {
+    background-color: hsl(45, 90%, 60%);
+    border: hsl(45, 90%, 60%);
+    color: black;
+}
+
+
+p {
+    line-height: 1.6;
+}
+
+
+
+/* inzio lavoro main */
+main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+}
+
+/* modello le sezioni */
+section {
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 1px solid #e6e0d3;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    background-color: white;
+}
+
+section h2{
+    color: hsl(220, 60%, 25%);
+}
+
+/* stilizzo sottotitoli sezioni */
+/* section h2::before {
+    content: '- ';
+    color: goldenrod;
+} */
+
+#chi-sono{
+    margin-top: -80px;
+   
+}
+
+#chi-sono p:first-of-type::first-letter{
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 6px;
+    color:hsl(220, 60%, 30%);
+}
+
+/* cambio forma immagine */
+.avatar {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    float: left;
+    border: 5px solid hsl(45, 90%, 60%);
+    margin: 0 24px 12px 0;
+}
+
+/* stilizzo icone font awesome */
+h2 i{
+    color: hsl(45, 90%, 50%);
+    height: 10px;
+}
+
+/* sezione competenze tabella */
+#competenze table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+#competenze table caption{
+    color: hsl(220, 30%, 40%);
+    display: inline-block;
+}
+
+#competenze table th{
+    color: hsl(220, 60%, 25%);
+    background-color: #ece6d8 ;
+}
+
+#competenze table td{
+    padding: 12px 14px;
+    border: 1px solid #ece6d8;
+    border-left: none;
+    border-right: none;
+}
+
+#competenze table i{
+    color: hsl(220, 60%, 30%);
+    padding: 5px;
+}
+
+#progress-bar{
+    accent-color:gold;
+    
+}
+
+/* sezione esperienze */
+
+#esperienze table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#esperienze table caption{
+    color: hsl(220, 30%, 40%);
+    display: inline-block;
+}
+
+#esperienze table th{
+    color: hsl(220, 60%, 25%);
+    background-color: #ece6d8 ;
+}
+
+#esperienze table td{
+    border: 1px solid #ece6d8;
+    border-left: none;
+    border-right: none;
+    padding: 12px 14px;
+}
+
+/* sezione progetti */
+
+article{
+    border: 1px solid #e6e0d3;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color:#ece6d8;
+    border-left: 5px solid hsl(220, 60%, 30%);
+}
+
+article h3, p, a{
+    padding-left: 10px;
+}
+
+article:nth-child(even){
+    background-color: white;
+    border-left:5px solid hsl(45, 90%, 50%);
+}
+
+/* stilizzazione sezione contatti */
+
+/* form */
+.input{
+    font-weight: bold;
+    color: hsl(220, 60%, 30%); 
+}
+
+input, textarea, select{
+    background-color: #fbf8f1;
+    border: 1px solid #d6cfbf;
+    width: 100%;
+    padding: 10px 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#side-footer {
+    background-color: #172136;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
