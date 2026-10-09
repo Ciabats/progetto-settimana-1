@@ -208,6 +208,22 @@ article:nth-child(even){
     border-left:5px solid hsl(45, 90%, 50%);
 }
 
+.codes{
+    text-decoration: none;
+    color: hsl(220, 60%, 30%);
+}
+
+#dettaglio{
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(220, 60%, 30%);
+    margin-top: 10px;
+    align-self:end;
+}
+
+#dettaglio::before{
+    content: ;
+}
 /* stilizzazione sezione contatti */
 
 /* form */
@@ -216,11 +232,40 @@ article:nth-child(even){
     color: hsl(220, 60%, 30%); 
 }
 
-input, textarea, select{
+input:not([type="checkbox"]), textarea, select{
     background-color: #fbf8f1;
     border: 1px solid #d6cfbf;
     width: 100%;
     padding: 10px 12px;
+}
+
+input:focus{
+    background-color: white;
+}
+
+textarea:focus{
+    background-color: white;
+}
+
+button{
+    color: white;
+    background-color: hsl(220, 60%, 30%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 10%;
+    height: 35px;
+}
+
+button:hover{
+    background-color:hsl(220, 60%, 45%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+#submit::before{
+    content: "\f1d8";
+    font-family:"Font Awesome 6 Free";
+    margin-right: 8px;
 }
 
 
@@ -251,5 +296,5 @@ input, textarea, select{
     color: #FFFFFF;
     text-align: center;
     font-size: 0.9rem;
-    margin: 0 auto;
+    padding: 30
 }
